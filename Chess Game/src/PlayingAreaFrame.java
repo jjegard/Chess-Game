@@ -6,12 +6,14 @@ import javax.swing.JFrame;
 
 public class PlayingAreaFrame extends JFrame
 {
+	private ChessBoard chessBoard;
+	
 	public PlayingAreaFrame()
 	{
 		super("Chess Game");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		ChessBoard chessBoard = new ChessBoard();
+		chessBoard = new ChessBoard();
 		
 		Container pane = this.getContentPane();
 		pane.add(chessBoard, BorderLayout.CENTER);

@@ -6,8 +6,8 @@ import javax.swing.ImageIcon;
 
 public class ChessPieceImage
 {
-	ImageIcon[] blackChessPieces;
-	ImageIcon[] whiteChessPieces;
+	private ImageIcon[] blackChessPieces;
+	private ImageIcon[] whiteChessPieces;
 	
 	public ChessPieceImage() throws IOException
 	{
@@ -45,5 +45,14 @@ public class ChessPieceImage
 			chessPieces[i] = new ImageIcon(image);
 		}
 	}
-
+	
+	public ImageIcon[] getBlackChessPieces()
+	{
+		return this.blackChessPieces;
+	}
+	
+	public ImageIcon[] getWhiteChessPieces()
+	{
+		return this.whiteChessPieces;
+	}
 }
